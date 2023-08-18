@@ -228,7 +228,7 @@ def game() -> str:
             guesses -= 1
             print("OOPS! You did not give me anything!")
         
-        if next_guess.lower() == 'hint':
+        elif next_guess.lower() == 'hint':
             guesses -= 1
             print(hinter(hints))
             hints += 1
