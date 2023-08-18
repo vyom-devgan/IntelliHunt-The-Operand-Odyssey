@@ -139,3 +139,4 @@ if __name__ == "__main__":
         solve.replace('--', '+')
     print(game())
     print(f'The correct solution was: {solve}.\n')
+    input('Thanks for playing!. Press any key to exit.')
