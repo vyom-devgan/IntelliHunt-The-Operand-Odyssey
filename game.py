@@ -223,6 +223,11 @@ def game() -> str:
               f'\nThe numbers that are in the solution are: {green_list}'
               f'\nThe numbers that are NOT in the solution are {red_list}')
         next_guess = input('Enter your next guess: ').replace(' ','')
+        
+        if len(next_guess) < 1:
+            guesses -= 1
+            print("OOPS! You did not give me anything!")
+        
         if next_guess.lower() == 'hint':
             guesses -= 1
             print(hinter(hints))
