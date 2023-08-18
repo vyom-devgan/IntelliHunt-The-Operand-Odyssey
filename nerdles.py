@@ -1,4 +1,4 @@
-# Nerdle Game
+# IntelliHunt: The Operand Odyssey
 # Vyom Devgan
 
 import random
